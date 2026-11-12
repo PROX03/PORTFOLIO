@@ -1,0 +1,63 @@
+{
+  "items": [
+    {
+      "role": "Campus Hero",
+      "organisation": "Programming Hero",
+      "context": "Dhaka-based programming education platform.",
+      "period": "",
+      "bullets_label": "What I do",
+      "bullets": [
+        "Selected to represent its learning programmes at SUST.",
+        "Promote courses and community activities and build an active learner network.",
+        "Relay student questions and feedback to the team."
+      ],
+      "visible": true
+    },
+    {
+      "role": "Founding Ambassador",
+      "organisation": "Jaatra",
+      "context": "Dhaka's first transit application.",
+      "period": "",
+      "bullets_label": "What I do",
+      "bullets": [
+        "Lead campus representation for an early-stage start-up, owning product presentation, user adoption and go-to-market outreach at SUST.",
+        "Run demonstrations and awareness campaigns that bring in new installs and active users.",
+        "Coordinate campus marketing with the central team and pass user feedback into product positioning."
+      ],
+      "visible": true
+    },
+    {
+      "role": "Campus Ambassador",
+      "organisation": "Genius Park One Education Solution",
+      "context": "Study-abroad consultancy.",
+      "period": "",
+      "bullets_label": "What I do",
+      "bullets": [
+        "Connect SUST students with study-abroad guidance and grow campus visibility."
+      ],
+      "visible": true
+    },
+    {
+      "role": "Campus Ambassador",
+      "organisation": "Bangla Innovator",
+      "context": "Innovation Olympiad, National Olympiad and Business Start-up Competition.",
+      "period": "",
+      "bullets_label": "What I do",
+      "bullets": [
+        "Manage registration and student outreach for national-level competitions."
+      ],
+      "visible": true
+    },
+    {
+      "role": "Campus Executive, SUST Team",
+      "organisation": "ILC Season 2",
+      "context": "",
+      "period": "",
+      "bullets_label": "What I did",
+      "bullets": [
+        "Led campus recruitment and designed the outreach strategy with structured delegation."
+      ],
+      "visible": true
+    }
+  ]
+}

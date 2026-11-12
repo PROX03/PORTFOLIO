@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "title": "Supply Chain Management Research: RMG Sector",
+      "type": "Academic project, IPE, SUST",
+      "description": "Analysed supply-chain structures, lead times and bottlenecks in the ready-made garments industry and identified process-improvement opportunities.",
+      "link": "",
+      "link_label": "",
+      "visible": true
+    },
+    {
+      "title": "Solar Powered Vehicle",
+      "type": "Group project, Shamsul Hoque Khan School & College",
+      "description": "Co-designed and assembled a working prototype, presented at Science Fair 2021.",
+      "link": "",
+      "link_label": "",
+      "visible": true
+    },
+    {
+      "title": "Historical Analysis of the Evolution of Neural Science",
+      "type": "Group project, Dhaka College",
+      "description": "Literature-based study presented to faculty and peers.",
+      "link": "",
+      "link_label": "",
+      "visible": true
+    }
+  ]
+}

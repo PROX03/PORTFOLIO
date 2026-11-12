@@ -1,0 +1,6 @@
+# EDIT: change the address below if your Netlify site name is different
+User-agent: *
+Allow: /
+Disallow: /admin/
+
+Sitemap: https://prottoy-bhuyian.netlify.app/sitemap.xml

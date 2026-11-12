@@ -1,0 +1,70 @@
+{
+  "location": "Sylhet, Bangladesh",
+  "form": {
+    "name_label": "Name",
+    "email_label": "Email",
+    "organisation_label": "Organisation",
+    "message_label": "Message",
+    "submit_label": "Send message",
+    "success_message": "Thank you. Your message has been sent and I will reply as soon as I can.",
+    "error_message": "Sorry, the message could not be sent. Please email me directly at bhuyianprottoy@gmail.com."
+  },
+  "links": [
+    {
+      "label": "Email",
+      "icon": "mail",
+      "display": "bhuyianprottoy@gmail.com",
+      "url": "mailto:bhuyianprottoy@gmail.com",
+      "group": "professional",
+      "visible": true
+    },
+    {
+      "label": "LinkedIn",
+      "icon": "linkedin",
+      "display": "prottoy-bhuyian",
+      "url": "https://www.linkedin.com/in/prottoy-bhuyian-90520a429",
+      "group": "professional",
+      "visible": true
+    },
+    {
+      "label": "WhatsApp",
+      "icon": "whatsapp",
+      "display": "+880 1631-137117",
+      "url": "https://wa.me/8801631137117",
+      "group": "professional",
+      "visible": true
+    },
+    {
+      "label": "Phone",
+      "icon": "phone",
+      "display": "+880 1631-137117",
+      "url": "tel:+8801631137117",
+      "group": "professional",
+      "visible": true
+    },
+    {
+      "label": "GitHub",
+      "icon": "github",
+      "display": "PROX03",
+      "url": "https://github.com/PROX03",
+      "group": "professional",
+      "visible": true
+    },
+    {
+      "label": "Facebook",
+      "icon": "facebook",
+      "display": "prottoy.bhuyian.5",
+      "url": "https://www.facebook.com/prottoy.bhuyian.5",
+      "group": "social",
+      "visible": true
+    },
+    {
+      "label": "Instagram",
+      "icon": "instagram",
+      "display": "prottoy_bhuyian",
+      "url": "https://www.instagram.com/prottoy_bhuyian/",
+      "group": "social",
+      "visible": true
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "site_title": "Md Prottoy Bhuyian | IPE Undergraduate and Campus Leader",
+  "last_updated": "2026-11-12",
+  "last_updated_label": "Last updated",
+  "footer_line": "Industrial & Production Engineering undergraduate at SUST. Open to internships and campus ambassador roles.",
+  "sections": {
+    "about": {
+      "nav": "About",
+      "title": "About",
+      "intro": ""
+    },
+    "impact": {
+      "nav": "Impact",
+      "title": "Campus Impact",
+      "intro": "The campus roles I hold and have held, and what I do in each."
+    },
+    "cases": {
+      "nav": "Case studies",
+      "title": "Case Studies",
+      "intro": "Four competitions and programmes, each set out the same way: context, my role, approach, outcome and what I learned."
+    },
+    "projects": {
+      "nav": "Projects",
+      "title": "Projects",
+      "intro": ""
+    },
+    "competitions": {
+      "nav": "Competitions",
+      "title": "Competitions",
+      "intro": ""
+    },
+    "skills": {
+      "nav": "Skills",
+      "title": "Skills",
+      "intro": "Skills marked \"learning\" are ones I am still building."
+    },
+    "extracurricular": {
+      "nav": "Activities",
+      "title": "Extracurricular",
+      "intro": ""
+    },
+    "certificates": {
+      "nav": "Certificates",
+      "title": "Certificates",
+      "intro": ""
+    },
+    "photos": {
+      "nav": "Photos",
+      "title": "Event Photos",
+      "intro": ""
+    },
+    "contact": {
+      "nav": "Contact",
+      "title": "Let's talk about your campus programme or internship",
+      "intro": "Send a message with the form, or reach me directly on any of the channels below."
+    }
+  },
+  "site_url": "https://prottoy-bhuyian.netlify.app",
+  "site_description": "Industrial & Production Engineering undergraduate at SUST and campus leader. Open to internships and campus ambassador roles in supply chain, operations, HR and AI-related work."
+}

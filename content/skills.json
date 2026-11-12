@@ -1,0 +1,151 @@
+{
+  "learning_label": "learning",
+  "groups": [
+    {
+      "title": "Leadership & Outreach",
+      "items": [
+        {
+          "name": "Team leadership",
+          "learning": false,
+          "visible": true
+        },
+        {
+          "name": "Delegation",
+          "learning": false,
+          "visible": true
+        },
+        {
+          "name": "Campus outreach",
+          "learning": false,
+          "visible": true
+        },
+        {
+          "name": "Stakeholder communication",
+          "learning": false,
+          "visible": true
+        },
+        {
+          "name": "Event organisation",
+          "learning": false,
+          "visible": true
+        },
+        {
+          "name": "Registration drives",
+          "learning": false,
+          "visible": true
+        }
+      ],
+      "visible": true
+    },
+    {
+      "title": "Workshops & Presentation",
+      "items": [
+        {
+          "name": "Presentation skills",
+          "learning": false,
+          "visible": true
+        },
+        {
+          "name": "Workshop facilitation",
+          "learning": false,
+          "visible": true
+        },
+        {
+          "name": "Business case presentations",
+          "learning": false,
+          "visible": true
+        },
+        {
+          "name": "MS PowerPoint",
+          "learning": false,
+          "visible": true
+        },
+        {
+          "name": "Canva",
+          "learning": false,
+          "visible": true
+        }
+      ],
+      "visible": true
+    },
+    {
+      "title": "Data & Analytics",
+      "items": [
+        {
+          "name": "MS Excel",
+          "learning": false,
+          "visible": true
+        },
+        {
+          "name": "Python",
+          "learning": false,
+          "visible": true
+        },
+        {
+          "name": "SQL",
+          "learning": true,
+          "visible": true
+        },
+        {
+          "name": "Power BI",
+          "learning": true,
+          "visible": true
+        }
+      ],
+      "visible": true
+    },
+    {
+      "title": "Operations & Engineering",
+      "items": [
+        {
+          "name": "AutoCAD",
+          "learning": false,
+          "visible": true
+        },
+        {
+          "name": "Additive manufacturing",
+          "learning": false,
+          "visible": true
+        },
+        {
+          "name": "Lean manufacturing and Six Sigma",
+          "learning": true,
+          "visible": true
+        }
+      ],
+      "visible": true
+    },
+    {
+      "title": "AI & Productivity",
+      "items": [
+        {
+          "name": "ChatGPT and Gemini for research, drafting and analysis",
+          "learning": false,
+          "visible": true
+        },
+        {
+          "name": "MS Word",
+          "learning": false,
+          "visible": true
+        },
+        {
+          "name": "Google Workspace",
+          "learning": false,
+          "visible": true
+        }
+      ],
+      "visible": true
+    }
+  ],
+  "ai": {
+    "title": "How I work with AI",
+    "lines": [
+      "Research: I use ChatGPT and Gemini to get up to speed on a new topic and to find what to read next.",
+      "Case analysis: I use them to structure a problem and to test my reasoning; the conclusions stay mine.",
+      "Drafting: I use them for first drafts, then check and rewrite the output myself before I use it."
+    ],
+    "note": "Python, SQL and Power BI projects are in progress and will be added here.",
+    "github_label": "See my GitHub",
+    "github_url": "https://github.com/PROX03"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "case_link_label": "View case study",
+  "items": [
+    {
+      "name": "ExcelMania 1.0",
+      "organiser": "RUET IPE Club",
+      "result": "1st Runner-Up",
+      "case_id": "excelmania",
+      "visible": true
+    },
+    {
+      "name": "Elevate 3.0",
+      "organiser": "Perfetti Van Melle Bangladesh",
+      "result": "Final Round",
+      "case_id": "elevate",
+      "visible": true
+    },
+    {
+      "name": "Dacoit of Excellence 3.0",
+      "organiser": "JnUCC",
+      "result": "Team Leader, business case",
+      "case_id": "dacoit-of-excellence",
+      "visible": true
+    },
+    {
+      "name": "IPESPHERE",
+      "organiser": "SUST",
+      "result": "Team Leader, business case",
+      "case_id": "ipesphere",
+      "visible": true
+    },
+    {
+      "name": "INNOVISTA",
+      "organiser": "GDN SUST",
+      "result": "Finalist, solo idea innovation",
+      "case_id": "",
+      "visible": true
+    },
+    {
+      "name": "Beyond the Metrics",
+      "organiser": "IUT",
+      "result": "Project display and wall magazine submission",
+      "case_id": "",
+      "visible": true
+    }
+  ]
+}

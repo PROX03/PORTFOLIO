@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "prefix": "",
+      "value": "5",
+      "suffix": "",
+      "label": "campus ambassador and representative roles",
+      "visible": true
+    },
+    {
+      "prefix": "",
+      "value": "1",
+      "suffix": "st",
+      "label": "Runner-Up, ExcelMania 1.0",
+      "visible": true
+    },
+    {
+      "prefix": "",
+      "value": "2",
+      "suffix": "",
+      "label": "business-case teams led",
+      "visible": true
+    },
+    {
+      "prefix": "",
+      "value": "4",
+      "suffix": "",
+      "label": "event management experiences: TEDx SUST, IPESPHERE 2, sports events, skill workshops",
+      "visible": true
+    }
+  ]
+}
