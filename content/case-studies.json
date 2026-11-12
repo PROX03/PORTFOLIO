@@ -1,0 +1,119 @@
+{
+  "labels": {
+    "context": "Context",
+    "role": "My role",
+    "approach": "Approach",
+    "outcome": "Outcome",
+    "learned": "What I learned",
+    "open": "Read case study",
+    "downloads": "Downloads",
+    "screenshots": "Screenshots"
+  },
+  "items": [
+    {
+      "id": "excelmania",
+      "title": "ExcelMania 1.0",
+      "organiser": "RUET IPE Club",
+      "badge": "1st Runner-Up",
+      "summary": "An advanced Excel competition on a textile orders dataset: data cleaning, formula-driven analysis and an interactive dashboard.",
+      "context": "An advanced Excel competition built on a textile orders dataset of about 1,000 order lines for January to September 2026, with seven tasks: data cleaning, formulas, analysis and summary, advanced analysis, an interactive dashboard, data-driven insights and an analytical report.",
+      "role": "Solo competitor.",
+      "approach_text": "",
+      "approach": [
+        "Cleaned the raw orders with an issue register and cleaning log.",
+        "Built auditable formula-driven analysis of sales, operations and targets.",
+        "Built an interactive performance dashboard filtered by month, factory, category, region and salesperson."
+      ],
+      "outcome": "1st Runner-Up. Key findings from my solution:",
+      "outcome_points": [
+        "About $20.1M revenue at 95.3% of target.",
+        "Only 31.2% of orders shipped on time, traced to promised lead times shorter than real lead times across every factory: a planning issue, not one weak plant.",
+        "2.50% unit defect rate."
+      ],
+      "learned": [
+        "Data cleaning discipline.",
+        "Dashboard design.",
+        "Turning numbers into recommendations."
+      ],
+      "downloads": [
+        {
+          "label": "Download workbook (.xlsx)",
+          "file": "/assets/files/ExcelMania_1.0_Workbook.xlsx"
+        },
+        {
+          "label": "Download solution (PDF)",
+          "file": "/assets/files/ExcelMania_1.0_Solution.pdf"
+        }
+      ],
+      "editor_note": "PLACEHOLDER: add one dashboard screenshot in the Screenshots list; it appears in the pop-up above the downloads.",
+      "visible": true,
+      "screenshots": []
+    },
+    {
+      "id": "elevate",
+      "title": "Elevate 3.0",
+      "organiser": "Perfetti Van Melle Bangladesh campus ambassador programme",
+      "badge": "Final Round",
+      "summary": "Reached the final round: an interview and a case-study presentation on product sourcing.",
+      "context": "Elevate 3.0 is the campus ambassador programme of Perfetti Van Melle Bangladesh. The final round was an interview and a case-study presentation.",
+      "role": "Final-round candidate.",
+      "approach_text": "I presented my solution to the product sourcing case provided by the company. The case details are confidential, so they are not described here.",
+      "approach": [],
+      "outcome": "Reached the final round.",
+      "outcome_points": [],
+      "learned": [
+        "Product sourcing.",
+        "Designing and managing a launch programme for a multinational FMCG company."
+      ],
+      "downloads": [],
+      "editor_note": "",
+      "visible": true,
+      "screenshots": []
+    },
+    {
+      "id": "dacoit-of-excellence",
+      "title": "Dacoit of Excellence 3.0",
+      "organiser": "JnUCC",
+      "badge": "Team Leader",
+      "summary": "Led a team through a business case covering product sourcing, marketing and market analysis.",
+      "context": "A business case competition organised by JnUCC.",
+      "role": "Team Leader.",
+      "approach_text": "Led the team through the case, directing product sourcing, marketing and market analysis.",
+      "approach": [],
+      "outcome": "Delivered a data-backed presentation.",
+      "outcome_points": [],
+      "learned": [
+        "Business case analysis.",
+        "Unit economics.",
+        "Product sourcing.",
+        "SWOT analysis."
+      ],
+      "downloads": [],
+      "editor_note": "",
+      "visible": true,
+      "screenshots": []
+    },
+    {
+      "id": "ipesphere",
+      "title": "IPESPHERE",
+      "organiser": "SUST",
+      "badge": "Team Leader",
+      "summary": "Led team strategy and the final presentation for a business case.",
+      "context": "A business case competition at SUST.",
+      "role": "Team Leader.",
+      "approach_text": "Led team strategy, covering business model, supply-chain and unit-economics analysis.",
+      "approach": [],
+      "outcome": "Delivered the final presentation as team lead.",
+      "outcome_points": [],
+      "learned": [
+        "Structuring a business model.",
+        "Supply-chain thinking.",
+        "Presenting as a team lead."
+      ],
+      "downloads": [],
+      "editor_note": "PLACEHOLDER: the three 'What I learned' points are drafts for you to refine in your own words.",
+      "visible": true,
+      "screenshots": []
+    }
+  ]
+}

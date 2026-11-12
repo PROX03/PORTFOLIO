@@ -1,0 +1,26 @@
+{
+  "title": "Education",
+  "items": [
+    {
+      "qualification": "B.Sc. in Industrial & Production Engineering",
+      "institution": "Shahjalal University of Science and Technology (SUST)",
+      "period": "Expected 2029",
+      "detail": "",
+      "visible": true
+    },
+    {
+      "qualification": "HSC, Science",
+      "institution": "Dhaka College",
+      "period": "2024",
+      "detail": "GPA 5.00/5.00. Government Merit Scholarship.",
+      "visible": true
+    },
+    {
+      "qualification": "SSC, Science",
+      "institution": "Shamsul Hoque Khan School & College",
+      "period": "2022",
+      "detail": "GPA 5.00/5.00. Government Merit Scholarship.",
+      "visible": true
+    }
+  ]
+}

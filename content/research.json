@@ -1,0 +1,25 @@
+{
+  "title": "Research interests",
+  "items": [
+    {
+      "title": "Textiles and fabrics",
+      "detail": "",
+      "visible": true
+    },
+    {
+      "title": "3D printing and additive manufacturing",
+      "detail": "Design for additive manufacturing, quality control of printed polymers, filaments from agricultural waste.",
+      "visible": true
+    },
+    {
+      "title": "Agritech",
+      "detail": "Precision agritech and rural micro-factories.",
+      "visible": true
+    },
+    {
+      "title": "Digital inventories and on-demand spare-part supply chains",
+      "detail": "",
+      "visible": true
+    }
+  ]
+}

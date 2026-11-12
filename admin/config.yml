@@ -1,0 +1,390 @@
+# Decap CMS configuration: every file in /content is editable from /admin.
+backend:
+  name: git-gateway
+  branch: main   # the branch Netlify deploys from
+
+media_folder: "assets/uploads"      # where uploads are saved in the repository
+public_folder: "/assets/uploads"    # how the site links to them
+
+site_url: https://prottoy-bhuyian.netlify.app   # EDIT if your site name is different
+display_url: https://prottoy-bhuyian.netlify.app
+logo_url: /favicon.svg
+show_preview_links: false
+
+editor:
+  preview: false
+
+collections:
+  # ------------------------------------------------------------------ Start
+  - name: start
+    label: "1. Hero and site settings"
+    editor: { preview: false }
+    files:
+      - name: profile
+        label: "Profile (hero, headshot, CV)"
+        file: content/profile.json
+        fields:
+          - { label: "Name", name: name, widget: string, hint: "Also change it in index.html if you ever rename the site." }
+          - { label: "Headline", name: headline, widget: string }
+          - { label: "One-line summary", name: summary, widget: text }
+          - label: "Status chips"
+            name: status
+            widget: list
+            summary: "{{fields.text}}"
+            field: { label: "Chip text", name: text, widget: string }
+          - { label: "Headshot", name: headshot, widget: image, hint: "Upload a new photo to replace it. Use a JPG under 200 KB, portrait shape." }
+          - { label: "Headshot description (alt text)", name: headshot_alt, widget: string }
+          - { label: "CV file (PDF)", name: cv_file, widget: file, hint: "Upload a new PDF to replace your CV everywhere on the site." }
+          - { label: "CV button text", name: cv_label, widget: string }
+          - { label: "Contact button text", name: contact_label, widget: string }
+          - { label: "LinkedIn button text", name: linkedin_label, widget: string }
+          - { label: "LinkedIn address", name: linkedin_url, widget: string }
+
+      - name: proof
+        label: "Proof bar (four numbers)"
+        file: content/proof.json
+        fields:
+          - label: "Proof items"
+            name: items
+            widget: list
+            summary: "{{fields.prefix}} {{fields.value}}{{fields.suffix}} {{fields.label}}"
+            fields:
+              - { label: "Text before the number", name: prefix, widget: string, required: false, hint: "For example: GPA" }
+              - { label: "Number", name: value, widget: string, hint: "Digits only, for example 5 or 5.00. This is the part that counts up." }
+              - { label: "Text straight after the number", name: suffix, widget: string, required: false, hint: "For example: st" }
+              - { label: "Label", name: label, widget: string }
+              # Reusable field (&visible): the switch that hides an item without deleting it
+              - &visible { label: "Visible on site", name: visible, widget: boolean, default: true, required: false, hint: "Switch off to hide this item without deleting it." }
+
+      - name: site
+        label: "Site settings and section headings"
+        file: content/site.json
+        fields:
+          - { label: "Browser tab title", name: site_title, widget: string }
+          - { label: "Site address", name: site_url, widget: string, required: false }
+          - { label: "Site description", name: site_description, widget: text, required: false }
+          - { label: "Last updated date", name: last_updated, widget: datetime, format: "YYYY-MM-DD", date_format: "DD MMMM YYYY", time_format: false, picker_utc: true, hint: "Shown in the footer. Change it whenever you update the site." }
+          - { label: "Last updated label", name: last_updated_label, widget: string }
+          - { label: "Footer line", name: footer_line, widget: text }
+          - label: "Section headings"
+            name: sections
+            widget: object
+            collapsed: true
+            fields:
+              - &section
+                label: "About"
+                name: about
+                widget: object
+                collapsed: true
+                fields:
+                  - { label: "Menu link text", name: nav, widget: string }
+                  - { label: "Section heading", name: title, widget: string }
+                  - { label: "Intro line under the heading", name: intro, widget: text, required: false }
+              - { <<: *section, label: "Campus Impact", name: impact }
+              - { <<: *section, label: "Case Studies", name: cases }
+              - { <<: *section, label: "Projects", name: projects }
+              - { <<: *section, label: "Competitions", name: competitions }
+              - { <<: *section, label: "Skills", name: skills }
+              - { <<: *section, label: "Extracurricular", name: extracurricular }
+              - { <<: *section, label: "Certificates", name: certificates }
+              - { <<: *section, label: "Event Photos", name: photos }
+              - { <<: *section, label: "Contact", name: contact }
+
+  # ------------------------------------------------------------------ About
+  - name: about_group
+    label: "2. About"
+    editor: { preview: false }
+    files:
+      - name: about
+        label: "About text and languages"
+        file: content/about.json
+        fields:
+          - label: "Paragraphs"
+            name: paragraphs
+            widget: list
+            field: { label: "Paragraph", name: text, widget: text }
+          - { label: "'Looking for' card title", name: looking_title, widget: string }
+          - { label: "'Looking for' card text", name: looking_text, widget: text }
+          - { label: "Languages title", name: languages_title, widget: string }
+          - label: "Languages"
+            name: languages
+            widget: list
+            summary: "{{fields.name}} ({{fields.level}})"
+            fields:
+              - { label: "Language", name: name, widget: string }
+              - { label: "Level", name: level, widget: string }
+              - *visible
+
+      - name: research
+        label: "Research interests"
+        file: content/research.json
+        fields:
+          - { label: "Block title", name: title, widget: string }
+          - label: "Interests"
+            name: items
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Interest", name: title, widget: string }
+              - { label: "Detail", name: detail, widget: text, required: false }
+              - *visible
+
+      - name: education
+        label: "Education"
+        file: content/education.json
+        fields:
+          - { label: "Block title", name: title, widget: string }
+          - label: "Education entries"
+            name: items
+            widget: list
+            summary: "{{fields.qualification}}, {{fields.institution}}"
+            fields:
+              - { label: "Qualification", name: qualification, widget: string }
+              - { label: "Institution", name: institution, widget: string }
+              - { label: "Year or period", name: period, widget: string, required: false }
+              - { label: "Detail (GPA, scholarship)", name: detail, widget: string, required: false }
+              - *visible
+
+  # ------------------------------------------------------------------ Work
+  - name: work
+    label: "3. Roles, case studies, projects"
+    editor: { preview: false }
+    files:
+      - name: experience
+        label: "Campus Impact (roles)"
+        file: content/experience.json
+        fields:
+          - label: "Roles"
+            name: items
+            widget: list
+            summary: "{{fields.role}}, {{fields.organisation}}"
+            fields:
+              - { label: "Role", name: role, widget: string }
+              - { label: "Organisation", name: organisation, widget: string }
+              - { label: "One-line context", name: context, widget: string, required: false }
+              - { label: "Period (optional)", name: period, widget: string, required: false, hint: "For example: 2025 to present. Leave empty to show nothing." }
+              - { label: "Bullets heading", name: bullets_label, widget: string, default: "What I do" }
+              - label: "Bullets"
+                name: bullets
+                widget: list
+                field: { label: "Bullet", name: text, widget: text }
+              - *visible
+
+      - name: case_studies
+        label: "Case studies"
+        file: content/case-studies.json
+        fields:
+          - label: "Headings used in every pop-up"
+            name: labels
+            widget: object
+            collapsed: true
+            fields:
+              - { label: "Context heading", name: context, widget: string }
+              - { label: "My role heading", name: role, widget: string }
+              - { label: "Approach heading", name: approach, widget: string }
+              - { label: "Outcome heading", name: outcome, widget: string }
+              - { label: "What I learned heading", name: learned, widget: string }
+              - { label: "Screenshots heading", name: screenshots, widget: string }
+              - { label: "Downloads heading", name: downloads, widget: string }
+              - { label: "Card link text", name: open, widget: string }
+          - label: "Case studies"
+            name: items
+            widget: list
+            summary: "{{fields.title}} ({{fields.badge}})"
+            fields:
+              - { label: "Short ID", name: id, widget: string, pattern: ["^[a-z0-9-]+$", "Lower-case letters, numbers and hyphens only"], hint: "Used in the shareable link, for example excelmania. Do not change it after sharing a link." }
+              - { label: "Title", name: title, widget: string }
+              - { label: "Organiser", name: organiser, widget: string }
+              - { label: "Badge", name: badge, widget: string, required: false }
+              - { label: "Card summary", name: summary, widget: text, required: false }
+              - { label: "Context", name: context, widget: text, required: false }
+              - { label: "My role", name: role, widget: text, required: false }
+              - { label: "Approach (paragraph)", name: approach_text, widget: text, required: false }
+              - label: "Approach (bullets)"
+                name: approach
+                widget: list
+                required: false
+                field: { label: "Step", name: text, widget: text }
+              - { label: "Outcome (paragraph)", name: outcome, widget: text, required: false }
+              - label: "Outcome (bullets)"
+                name: outcome_points
+                widget: list
+                required: false
+                field: { label: "Point", name: text, widget: text }
+              - label: "What I learned"
+                name: learned
+                widget: list
+                required: false
+                field: { label: "Lesson", name: text, widget: string }
+              - label: "Screenshots"
+                name: screenshots
+                widget: list
+                required: false
+                summary: "{{fields.alt}}"
+                fields:
+                  - { label: "Image", name: image, widget: image }
+                  - { label: "Description (alt text)", name: alt, widget: string }
+                  - *visible
+              - label: "Downloads"
+                name: downloads
+                widget: list
+                required: false
+                summary: "{{fields.label}}"
+                fields:
+                  - { label: "Button text", name: label, widget: string }
+                  - { label: "File", name: file, widget: file }
+                  - *visible
+              - { label: "Note to self (not shown on the site)", name: editor_note, widget: text, required: false }
+              - *visible
+
+      - name: projects
+        label: "Projects"
+        file: content/projects.json
+        fields:
+          - label: "Projects"
+            name: items
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Title", name: title, widget: string }
+              - { label: "Type and place", name: type, widget: string, required: false }
+              - { label: "Description", name: description, widget: text }
+              - { label: "Link (optional)", name: link, widget: string, required: false }
+              - { label: "Link text", name: link_label, widget: string, required: false }
+              - *visible
+
+      - name: competitions
+        label: "Competitions"
+        file: content/competitions.json
+        fields:
+          - { label: "Case study link text", name: case_link_label, widget: string }
+          - label: "Competitions"
+            name: items
+            widget: list
+            summary: "{{fields.name}}: {{fields.result}}"
+            fields:
+              - { label: "Competition", name: name, widget: string }
+              - { label: "Organiser", name: organiser, widget: string, required: false }
+              - { label: "Result or role", name: result, widget: string }
+              - { label: "Linked case study ID", name: case_id, widget: string, required: false, hint: "Optional. Type the Short ID of a case study (excelmania, elevate, dacoit-of-excellence, ipesphere) to link to its pop-up." }
+              - *visible
+
+      - name: skills
+        label: "Skills"
+        file: content/skills.json
+        fields:
+          - { label: "'Learning' tag text", name: learning_label, widget: string }
+          - label: "Skill groups"
+            name: groups
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Group title", name: title, widget: string }
+              - label: "Skills"
+                name: items
+                widget: list
+                summary: "{{fields.name}}"
+                fields:
+                  - { label: "Skill", name: name, widget: string }
+                  - { label: "Still learning", name: learning, widget: boolean, default: false, required: false }
+                  - *visible
+              - *visible
+          - label: "How I work with AI"
+            name: ai
+            widget: object
+            fields:
+              - { label: "Title", name: title, widget: string }
+              - label: "Lines"
+                name: lines
+                widget: list
+                field: { label: "Line", name: text, widget: text }
+              - { label: "Note", name: note, widget: text, required: false }
+              - { label: "GitHub button text", name: github_label, widget: string }
+              - { label: "GitHub address", name: github_url, widget: string }
+
+      - name: extracurricular
+        label: "Extracurricular"
+        file: content/extracurricular.json
+        fields:
+          - label: "Activities"
+            name: items
+            widget: list
+            summary: "{{fields.role}}, {{fields.organisation}}"
+            fields:
+              - { label: "Role", name: role, widget: string }
+              - { label: "Organisation", name: organisation, widget: string, hint: "Wrap words in **two asterisks** to show them in bold." }
+              - { label: "Description", name: description, widget: text, required: false }
+              - *visible
+          - { label: "Interests title", name: interests_title, widget: string }
+          - { label: "Interests", name: interests, widget: text, required: false }
+
+  # ------------------------------------------------------------------ Media
+  - name: media
+    label: "4. Certificates and photos"
+    editor: { preview: false }
+    files:
+      - name: certificates
+        label: "Certificates"
+        file: content/certificates.json
+        fields:
+          - label: "Certificates"
+            name: items
+            widget: list
+            summary: "{{fields.title}} ({{fields.year}})"
+            fields:
+              - { label: "Image", name: image, widget: image, hint: "A JPG or PNG of the certificate, ideally under 500 KB." }
+              - { label: "Title", name: title, widget: string }
+              - { label: "Issuer", name: issuer, widget: string, required: false }
+              - { label: "Year", name: year, widget: string, required: false }
+              - { label: "Link (optional)", name: link, widget: string, required: false, hint: "For example a verification page. Must start with https://" }
+              - *visible
+
+      - name: photos
+        label: "Event photos"
+        file: content/photos.json
+        fields:
+          - label: "Photos"
+            name: items
+            widget: list
+            summary: "{{fields.title}} ({{fields.year}})"
+            fields:
+              - { label: "Image", name: image, widget: image, hint: "A JPG, ideally under 500 KB." }
+              - { label: "Title", name: title, widget: string }
+              - { label: "Event", name: event, widget: string, required: false }
+              - { label: "Year", name: year, widget: string, required: false }
+              - { label: "Link (optional)", name: link, widget: string, required: false }
+              - *visible
+
+  # ------------------------------------------------------------------ Contact
+  - name: contact_group
+    label: "5. Contact"
+    editor: { preview: false }
+    files:
+      - name: contact
+        label: "Contact links and form text"
+        file: content/contact.json
+        fields:
+          - { label: "Location", name: location, widget: string }
+          - label: "Form text"
+            name: form
+            widget: object
+            collapsed: true
+            fields:
+              - { label: "Name label", name: name_label, widget: string }
+              - { label: "Email label", name: email_label, widget: string }
+              - { label: "Organisation label", name: organisation_label, widget: string }
+              - { label: "Message label", name: message_label, widget: string }
+              - { label: "Send button text", name: submit_label, widget: string }
+              - { label: "Success message", name: success_message, widget: text }
+              - { label: "Error message", name: error_message, widget: text }
+          - label: "Contact links"
+            name: links
+            widget: list
+            summary: "{{fields.label}}: {{fields.display}}"
+            fields:
+              - { label: "Label", name: label, widget: string }
+              - { label: "Icon", name: icon, widget: select, options: ["mail", "linkedin", "whatsapp", "phone", "github", "facebook", "instagram", "link"] }
+              - { label: "Text shown", name: display, widget: string, required: false }
+              - { label: "Address", name: url, widget: string, hint: "Starts with https://, mailto: or tel:" }
+              - { label: "Group", name: group, widget: select, options: [{ label: "Professional (listed first)", value: "professional" }, { label: "Social (listed last)", value: "social" }] }
+              - *visible

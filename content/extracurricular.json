@@ -1,0 +1,42 @@
+{
+  "items": [
+    {
+      "role": "Executive Member",
+      "organisation": "Kaizen SUST",
+      "description": "Organised SkillForge 1.0, a data science session and CAD workshop, securing 23 registrations through direct referral.",
+      "visible": true
+    },
+    {
+      "role": "Executive Member",
+      "organisation": "Sports SUST",
+      "description": "Managed on-ground operations for a charity tournament, coordinating volunteers and match-day logistics.",
+      "visible": true
+    },
+    {
+      "role": "Volunteer",
+      "organisation": "IPESPHERE Season 2 and **TEDx SUST**",
+      "description": "Event management, sponsorship outreach, guest coordination and registration.",
+      "visible": true
+    },
+    {
+      "role": "General Member (event management)",
+      "organisation": "IPE Association, SUST",
+      "description": "",
+      "visible": true
+    },
+    {
+      "role": "Former Executive",
+      "organisation": "Dhaka College Science Club",
+      "description": "Led the project showcase of the Intra Science Festival 2023, secured sponsorships and invitations, and mentored junior members.",
+      "visible": true
+    },
+    {
+      "role": "Former Executive",
+      "organisation": "Science Club, Shamsul Hoque Khan School & College",
+      "description": "Organised intra-school science events and project displays.",
+      "visible": true
+    }
+  ],
+  "interests_title": "Interests",
+  "interests": "Reading research papers and articles, fitness and nutrition, movies."
+}

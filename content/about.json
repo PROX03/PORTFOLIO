@@ -1,0 +1,32 @@
+{
+  "paragraphs": [
+    "I am an Industrial & Production Engineering undergraduate at Shahjalal University of Science and Technology (SUST), Sylhet. I am in my 4th semester and expect to graduate in 2029. I am based in Sylhet and my hometown is Dhaka.",
+    "I lead campus outreach for start-ups, education programmes and competitions. I also lead business-case teams and present under pressure.",
+    "I aim for a career in operations and campus-led growth that combines lean practice, data-driven decisions and AI tools."
+  ],
+  "looking_title": "What I am looking for",
+  "looking_text": "Internships and campus ambassador roles in FMCG across supply chain, operations, HR and AI-related work.",
+  "languages_title": "Languages",
+  "languages": [
+    {
+      "name": "Bangla",
+      "level": "Native",
+      "visible": true
+    },
+    {
+      "name": "English",
+      "level": "Professional working proficiency",
+      "visible": true
+    },
+    {
+      "name": "Hindi-Urdu",
+      "level": "Conversational",
+      "visible": true
+    },
+    {
+      "name": "Norwegian",
+      "level": "Beginner",
+      "visible": true
+    }
+  ]
+}

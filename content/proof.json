@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "prefix": "",
+      "value": "5",
+      "suffix": "",
+      "label": "campus ambassador and representative roles",
+      "visible": true
+    },
+    {
+      "prefix": "",
+      "value": "1",
+      "suffix": "st",
+      "label": "Runner-Up, ExcelMania 1.0",
+      "visible": true
+    },
+    {
+      "prefix": "",
+      "value": "2",
+      "suffix": "",
+      "label": "business-case teams led",
+      "visible": true
+    },
+    {
+      "prefix": "GPA",
+      "value": "5.00",
+      "suffix": "",
+      "label": "in both SSC and HSC",
+      "visible": true
+    }
+  ]
+}
