@@ -14,19 +14,6 @@
       "visible": true
     },
     {
-      "role": "Founding Ambassador",
-      "organisation": "Jaatra",
-      "context": "Dhaka's first transit application.",
-      "period": "",
-      "bullets_label": "What I do",
-      "bullets": [
-        "Lead campus representation for an early-stage start-up, owning product presentation, user adoption and go-to-market outreach at SUST.",
-        "Run demonstrations and awareness campaigns that bring in new installs and active users.",
-        "Coordinate campus marketing with the central team and pass user feedback into product positioning."
-      ],
-      "visible": true
-    },
-    {
       "role": "Campus Ambassador",
       "organisation": "Genius Park One Education Solution",
       "context": "Study-abroad consultancy.",
@@ -38,6 +25,17 @@
       "visible": true
     },
     {
+      "bullets_label": "What I do",
+      "visible": true,
+      "role": "Campus Ambassador",
+      "organisation": "IEOM Society AUST Student Chapter",
+      "context": "InnovaTrix 2.0; Business Case, CAD, Start-up/idea Competition.",
+      "bullets": [
+        "Encourage students to apply their skills in national level.",
+        "Manage registration and student outreach for national-level competitions."
+      ]
+    },
+    {
       "role": "Campus Ambassador",
       "organisation": "Bangla Innovator",
       "context": "Innovation Olympiad, National Olympiad and Business Start-up Competition.",
@@ -45,6 +43,19 @@
       "bullets_label": "What I do",
       "bullets": [
         "Manage registration and student outreach for national-level competitions."
+      ],
+      "visible": true
+    },
+    {
+      "role": "Founding Ambassador",
+      "organisation": "Jaatra",
+      "context": "Dhaka's first transit application.",
+      "period": "",
+      "bullets_label": "What I do",
+      "bullets": [
+        "Lead campus representation for an early-stage start-up, owning product presentation, user adoption and go-to-market outreach at SUST.",
+        "Run demonstrations and awareness campaigns that bring in new installs and active users.",
+        "Coordinate campus marketing with the central team and pass user feedback into product positioning."
       ],
       "visible": true
     },
